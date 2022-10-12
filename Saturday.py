@@ -96,6 +96,7 @@ def takeCommand():
     try :
         print("Recognizing.......")
         query = r.recognize_google(audio,language='en-in')
+        query = query.lower()
         print(f"user said : {query}\n")
     except Exception as e:
         print(e)
@@ -122,6 +123,8 @@ if __name__ == "__main__" :
 
 
     while True :
+
+        query = takeCommand()
         
         if 'wikipedia' in query :
             speak('Searching Wikipedia......')
