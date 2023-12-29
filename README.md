@@ -1,2 +1,2 @@
-# Saturday 
-# In its early stages 
+## XDEA 
+A simple implementation of self-learning bot using python.
